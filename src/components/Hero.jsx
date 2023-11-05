@@ -34,10 +34,10 @@ const Hero = () => {
       </div>
       <div className="flex flex-col gap-6">
         <p className="uppercase text-center  text-[#BDBDBD]">Featured and seen in</p>
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center gap-10 items-center">
           {images.map((image, idx) => (
             <div key={idx}>
-              <img className="h-[30px] w-full" src={image.src} alt={image.src} />
+              <img className="px-5 h-[30px] w-full" src={image.src} alt={image.src} />
             </div>
           ))}
         </div>
