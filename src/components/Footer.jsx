@@ -10,14 +10,14 @@ export default function Footer() {
         </div>
         Raft
       </div>
-      <div className="flex justify-between">
-        <div>
+      <div className="flex gap-8 ">
+        <div className="w-1/3">
           <div></div>
           <div className="border border-dashed rounded-lg h-20">
             Scan to download App on the Playstore and Appstore.
           </div>
         </div>
-        <div className="px-6 flex gap-6">
+        <div className="px-6  justify-between w-2/3 flex gap-6">
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-sm">About Us</h3>
             <p className="font-thin text-xs">Our company</p>

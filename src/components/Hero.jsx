@@ -33,7 +33,7 @@ const Hero = () => {
         <img className="rounded-xl" src="/assets/Hero.jpeg" alt="" />
       </div>
       <div className="flex flex-col gap-6">
-        <p className="uppercase text-center  text-[#BDBDBD]">Featured and seen in</p>
+        <p className="uppercase text-center font-bold text-[#BDBDBD]">Featured and seen in</p>
         <div className="flex justify-center gap-10 items-center">
           {images.map((image, idx) => (
             <div key={idx}>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dancing+Script&family=Lora&family=Merriweather&family=Mooli&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +11,9 @@
 body {
   background-color: #000000;
   color: #F9F5F6;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'SF Pro Display', 'sans-serif';
 }
