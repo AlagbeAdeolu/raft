@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import CTASection from "../components/CTASection";
 import Features from "../components/Features";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <CTASection />
       <Features />
+      <Testimonial />
     </Layout>
   );
 };

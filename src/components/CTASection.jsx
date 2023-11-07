@@ -24,18 +24,18 @@ const CTA = () => {
       {/* First Section */}
       <div className="flex flex-col items-center justify-center mt-20">
         <div className="flex flex-col items-center">
-          <h1 className="text-6xl w-[600px] text-center mb-4 capitalize">
+          <h1 className="text-4xl lg:text-6xl lg:w-[600px] text-center mb-4 capitalize">
             Elevate your financial Journey with RAFT
           </h1>
-          <p className=" text-center w-[450px] text-xs text-[#BDBDBD]">
+          <p className=" text-center w-3/4 lg:w-[450px] text-xs text-[#BDBDBD]">
             RAFT offers a world of financial possibilities. From investment to
             payements , we've got you covered. Join us and unlock your financial
             potential today.
           </p>
         </div>
         <div className="flex flex-col gap-4 my-6">
-          <div className="flex gap-4">
-            <div className="w-2/3">
+          <div className="flex flex-col md:flex-row px-8 gap-4">
+            <div className="md:w-2/3">
               <img src="" alt="" />
               <div className="h-[300px] px-4 flex flex-col justify-end bg-[#272829] rounded-xl">
                 <h2 className="font-semibold mb-2">Seamless Payments</h2>
@@ -45,7 +45,7 @@ const CTA = () => {
                 </p>
               </div>
             </div>
-            <div className="w-1/3">
+            <div className="md:w-1/3">
               <img src="" alt="" />
               <div className="h-[300px] px-4 flex flex-col justify-end bg-[#272829] rounded-xl">
                 <h2 className="font-semibold mb-2">Smart Investing</h2>
@@ -56,8 +56,8 @@ const CTA = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row-reverse gap-4">
-            <div className="w-2/3">
+          <div className="flex flex-col-reverse md:flex-row-reverse px-8 gap-4">
+            <div className="md:w-2/3">
               <img src="" alt="" />
               <div className="h-[300px] px-4 flex flex-col justify-end bg-[#272829] rounded-xl">
                 <h2 className="font-semibold mb-2">Financial Planning</h2>
@@ -67,7 +67,7 @@ const CTA = () => {
                 </p>
               </div>
             </div>
-            <div className="w-1/3">
+            <div className="md:w-1/3">
               <img src="" alt="" />
               <div className="h-[300px] px-4 flex flex-col justify-end bg-[#272829] rounded-xl">
                 <h2 className="font-semibold mb-2">Wealth Management</h2>
@@ -83,20 +83,20 @@ const CTA = () => {
       {/* Second Section */}
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl w-[600px] text-center mb-4 capitalize">
+          <h1 className="text-3xl lg:text-5xl lg:w-[600px] text-center mb-4 capitalize">
             Your financial freedom, your way
           </h1>
-          <p className=" text-center font-extralight mb-10 w-[480px] text-xs text-[#BDBDBD]">
+          <p className=" text-center font-extralight mb-10 lg:w-[480px] text-xs text-[#BDBDBD]">
             We believe that managing your finances should be effortless and
             cost-effective. That's why we offer you the freedom you deserve
           </p>
           <div>
-            <img className="rounded-xl" src="/assets/ff.jpeg" alt="" />
+            <img className="rounded-xl w-[950px]" src="/assets/ff.jpeg" alt="" />
           </div>
         </div>
-        <div className="grid my-8 gap-2 grid-cols-3 place-items-center">
+        <div className="grid my-8 gap-2 lg:grid-cols-3 place-items-center">
           {features.map((feature, idx) => (
-            <div className="w-4/5" key={idx}>
+            <div className="px-4 md:px-0 md:w-4/5" key={idx}>
               <div className="flex gap-2 mb-4">
                 {feature.icon}
                 <h1 className="font-semibold">{feature.title}</h1>

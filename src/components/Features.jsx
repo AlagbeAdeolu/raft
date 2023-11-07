@@ -30,27 +30,27 @@ const Features = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
+    <div className="flex flex-col mx-auto">
       {/* Third Section */}
-      <div className=" w-full flex items-center my-8 text-black mx-auto h-1/3 bg-[#2B892E]">
-        <h2 className="text-9xl font-medium  p-4">
+      <div className=" w-full flex items-center my-8 text-black mx-auto h-1/3 bg-[#48D64C]">
+        <h2 className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-medium  py-10 px-6 ">
           Smart investments, secure payments, and expert guidance, all in one
           place.
         </h2>
       </div>
 
       <div className="text-left my-8">
-        <div className="px-16 my-8">
-          <h2 className="text-5xl w-[600px] mb-4 capitalize">
+        <div className="px-8 my-8">
+          <h2 className="text-3xl lg:text-5xl lg:w-[600px] mb-4 capitalize">
             Confidently Shape your financial future
           </h2>
-          <p className=" w-[480px] text-sm font-semibold text-[#BDBDBD]">
+          <p className=" lg:w-[480px] text-sm font-semibold text-[#BDBDBD]">
             At RAFT, we empower you to confidently shape your financial future.
             Our modern approach simplifies saving and investing, making it
             easier than ever.
           </p>
         </div>
-        <div className="my-8  grid grid-cols-2 place-items-center gap-8">
+        <div className="my-8 px-8 flex flex-col md:grid grid-cols-2 place-items-center gap-8">
           <div className="py-4 px-8 bg-[#131313] h-[300px] rounded-xl">
             <div className="w-2/3">
               <h1 className="font-semibold">Spend Better</h1>
@@ -75,8 +75,8 @@ const Features = () => {
         <div className="grid grid-cols-4 text-center">
           {infos.map((info, idx) => (
             <div className="flex flex-col gap-2" key={idx}>
-              <h1 className="text-4xl font-semibold">{info.amount}</h1>
-              <p className="uppercase text-xs">{info.title}</p>
+              <h1 className="text-xl lg:text-4xl font-semibold">{info.amount}</h1>
+              <p className="uppercase  lg:text-xs">{info.title}</p>
             </div>
           ))}
         </div>
@@ -88,10 +88,10 @@ const Features = () => {
       <div className="flex flex-col text-center items-center justify-center gap-6">
         <div className="grid place-items-center gap-8 mt-10">
           <p className="text-[#2B892E] font-bold">Introducing</p>
-          <h1 className="text-5xl w-[600px]">
+          <h1 className=" text-3xl w-full lg:text-5xl lg:w-[600px]">
             Introducing RAFT's Next-Gen Cards.
           </h1>
-          <p className="text-xs text-[#bdbdbd] leading-5 w-[400px]">
+          <p className="text-xs w-3/4 px-2 text-[#bdbdbd] leading-5 lg:w-[400px]">
             Discover RAFT's latest innovation - our new cars. Elevate your
             banking experience with cutting-edge features, security, and
             unprecedented convinience.
@@ -101,9 +101,9 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="place-items-center text-left grid my-8 grid-cols-3 gap-2">
+        <div className="place-items-center text-left grid my-8 lg:grid-cols-3 gap-2">
           {features.map((feature, idx) => (
-            <div className="w-4/5" key={idx}>
+            <div className="px-4 md:px-0 md:w-4/5" key={idx}>
               <div className="flex items-center gap-2 mb-2">
                 {feature.icon}
                 <h1 className="font-semibold">{feature.title}</h1>
