@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import CTASection from "../components/CTASection";
 import Features from "../components/Features";
 import Testimonial from "../components/Testimonial";
+import FAQ from "../components/FAQ";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <CTASection />
       <Features />
       <Testimonial />
+      <FAQ />
     </Layout>
   );
 };

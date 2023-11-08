@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="flex flex-col justify-center items-center">
       <div className=" flex flex-col items-center gap-6 mt-20 mb-20">
         <div className="flex flex-col items-center justify-center gap-2">
-          <div className="bg-[#2c2b2b] flex items-center gap-2 text-lg py-1 rounded-full px-5">
+          <div className="bg-[#2c2b2b] flex items-center gap-2 text-lg py-1 rounded-full px-5 mb-6">
             Introducing Raft Cards
             <div className="text-xs">
               <ArrowForwardIosIcon fontSize="small" />
@@ -40,11 +40,11 @@ const Hero = () => {
         <p className="uppercase text-center font-bold text-[#BDBDBD]">
           Featured and seen in
         </p>
-        <div className="flex justify-center w-[600px] gap-10 items-center">
+        <div className="flex justify-center w-[600px] gap-6 lg:gap-10 items-center">
           {images.map((image, idx) => (
-            <div className="w-full" key={idx}>
+            <div className="w-full h-full" key={idx}>
               <img
-                className="px-5 lg:h-[30px] w-full"
+                className="px-5 md:px-0 w-full"
                 src={image.src}
                 alt={image.src}
               />

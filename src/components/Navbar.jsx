@@ -28,8 +28,8 @@ const Navbar = () => {
         </div>
 
         <div className="font-semibold hidden lg:flex gap-4">
-          <button className="">Login</button>
-          <button className="rounded-full font-semibold py-1 px-3 bg-[#2B892E] ">
+          <button className="hover:scale-110 transition-all duration-500 ease-in-out">Login</button>
+          <button className="rounded-full font-semibold py-1 px-3 hover:scale-110 transition-all duration-500 ease-in-out bg-[#2B892E] ">
             Get Started
           </button>
         </div>

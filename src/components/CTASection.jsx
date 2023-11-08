@@ -83,7 +83,7 @@ const CTA = () => {
       {/* Second Section */}
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <h1 className="text-3xl lg:text-5xl lg:w-[600px] text-center mb-4 capitalize">
+          <h1 className="text-3xl lg:text-6xl lg:w-[600px] text-center mb-4 capitalize">
             Your financial freedom, your way
           </h1>
           <p className=" text-center font-extralight mb-10 lg:w-[480px] text-xs text-[#BDBDBD]">
@@ -94,9 +94,9 @@ const CTA = () => {
             <img className="rounded-xl w-[950px]" src="/assets/ff.jpeg" alt="" />
           </div>
         </div>
-        <div className="grid my-8 gap-2 lg:grid-cols-3 place-items-center">
+        <div className="md:grid lg:w-[950px] lg:mx-auto my-8 gap-2 md:grid-cols-3 place-items-center">
           {features.map((feature, idx) => (
-            <div className="px-4 md:px-0 md:w-4/5" key={idx}>
+            <div className="px-4 py-4 md:px-0 md:w-4/5" key={idx}>
               <div className="flex gap-2 mb-4">
                 {feature.icon}
                 <h1 className="font-semibold">{feature.title}</h1>
