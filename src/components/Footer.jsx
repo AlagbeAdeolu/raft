@@ -49,14 +49,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" mx-4 mt-4 text-xs md:text-sm text-center md:text-left font-light font-sans flex justify-between items-center">
+      <div className=" mx-4 mt-4 text-xs md:text-sm text-center md:text-left font-light font-sans flex flex-col md:flex-row gap-1  justify-between items-center">
         <div className="flex items-center md:gap-1">
           English(United Kingdom)
           <span>
             <KeyboardArrowDown />
           </span>
         </div>
-        <div>Designed by @AdeolaDEV, Developed by Adeolu</div>
+        <div>Designed by @Adeoladev, Developed by Adeolu</div>
 
         <p>© RAFT Corp, LLC.</p>
       </div>
